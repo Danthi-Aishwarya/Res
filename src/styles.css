@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(29, 29, 29);
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-image: url("restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 20px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  width: 30%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-btn:hover {
+  background-color: rgb(138, 138, 138);
+}
