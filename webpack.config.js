@@ -1,4 +1,3 @@
-// webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -12,11 +11,18 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/index.html"],
+  },
+  stats: {
+    children: true,
+  },
+  cache: {
+    type: "filesystem",
+    cacheDirectory: path.resolve(__dirname, ".temp_cache"),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: path.resolve(__dirname, "src", "template.html"),
     }),
   ],
   module: {

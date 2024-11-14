@@ -1,18 +1,20 @@
 {
   "name": "restaurant-page",
   "version": "1.0.0",
+  "description": "Your project description",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^4.0.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
