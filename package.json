@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Your project description",
   "main": "index.js",
+  "homepage": "https://Danthi-Aishwarya.github.io/Res",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --mode production",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
